@@ -1,0 +1,145 @@
+header {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(rgb(255, 93, 93),red,rgb(255, 93, 93));
+    justify-content: space-between;
+    padding-right: 0;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+header p{
+    font-size: 1.2rem;
+}
+header nav ul li {
+    display: inline-flex;
+    justify-content: end;
+    align-content: flex-end;
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+
+}
+header nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#about img:not(.icon){
+    width: 250px ;
+    height: 250px;
+    border-radius: 150px;
+    max-width: 50%;
+}
+#about{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+
+}
+html{
+    background-origin: border-box;
+    background: linear-gradient(rgb(230, 248, 230), rgb(162, 216, 162),
+    rgb(85, 201, 85),rgb(93, 194, 93),rgb(229, 253, 229));
+    background-repeat: repeat;
+}
+.icon {
+    width: 48px;
+}
+#caption {
+    width: 50%;
+    margin-bottom: 0px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+.social {
+    margin-top: 0;
+}
+button{
+    background-color: rgb(255, 0, 0);
+    color: yellow;
+    border-radius: 25px;
+}
+.html, .css, .javascript, .python{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+   margin-bottom: 20px;
+   width: 200px;
+
+}
+
+.skills{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  
+}
+ h2{
+    text-transform: uppercase;
+    font-family: Cyber ;
+}
+.projects div img{
+    height: 200px;
+    width: 250px;
+    transform: scale(0.8);
+}
+.projects div img:hover{
+    transform: scale(1.0);
+    transition: 1s;
+}
+
+.projects div{
+    background-color: rgb(12, 10, 43);
+    color: rgba(231, 223, 177, 0.952);
+    border: 2px dotted rgba(231, 223, 177, 0.952);
+    border-radius: 20px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+.name{
+    font-family: Neon;
+}
+.projects{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects div:last-child img{
+    width: 150px;
+}
+
+.projects div p a{
+    color: beige;
+    text-decoration: none;
+}
+.projects div p a:hover{
+   font-size: larger;
+   transition: 0.5s;
+}
+@font-face {
+    font-family: Neon;
+    src: url(neon_rave/Neon\ Rave.ttf);
+}
+@font-face {
+    font-family: Cyber;
+    src: url(cyborg_punk/Cyborg\ Punk.ttf);
+}
