@@ -135,6 +135,12 @@ button{
    font-size: larger;
    transition: 0.5s;
 }
+.whatapp{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
 @font-face {
     font-family: Neon;
     src: url(varsity_2/varsity_regular.ttf);
