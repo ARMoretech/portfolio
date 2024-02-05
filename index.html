@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdur-Rafiq Adedeji Morenikeji</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="me.jpg" type="image/x-icon">
+    <Script>
+        let page = document.getElementById('html')
+        let checkbox = document.getElementById('dark-mode')
+    
+        if (checkbox == checked) {
+            page.style.backgroundColor = black
+            
+        }
+    </Script>
 </head>
 <header>
    <div class="name">
@@ -34,7 +43,7 @@
         </p>
         <p class="social ">
         <a href="https://www.twitter.com/dedeji7" target="_blank"><img src="icons8-twitterx.svg"  alt="X" class="icon"></a>
-         <a href="https://www.facebook.com/abdurrofiq.morenikeji?mibextid=ZbWKwL"  target="_blank"><img src="icons8-facebook.svg" class="icon"></a> 
+         <a href=""><img src="icons8-facebook.svg" class="icon"></a> 
          <a href="https://www.linkedin.com/in/abdur-rafiq-morenikeji-7b178b2a0/" target="_blank"><img src="icons8-linkedin.svg"class="icon" alt="Linkedin profile"></a>
          <a href="https://github.com/ARMoretech" target="_blank"><img src="icons8-github-24.svg" class="icon" alt="Github"></a> <br>  
         <a href="Abdur-Rafiq Morenikeji.pdf" target="_blank"><button>DOWNLOAD MY RESUME</button></a>
@@ -84,13 +93,31 @@
   <div class="contact" id="contact">
    <p> You can contact me through </p>
    <a href="https://www.twitter.com/dedeji7" target="_blank"><img src="icons8-twitterx.svg"  alt="X" class="icon"></a>
-         <a href="https://www.facebook.com/abdurrofiq.morenikeji?mibextid=ZbWKwL"  target="_blank"><img src="icons8-facebook.svg" class="icon"></a> 
+         <a href=""><img src="icons8-facebook.svg" class="icon"></a> 
          <a href="https://www.linkedin.com/in/abdur-rafiq-morenikeji-7b178b2a0/" target="_blank"><img src="icons8-linkedin.svg"class="icon" alt="Linkedin profile"></a>
          <a href="https://github.com/ARMoretech" target="_blank"><img src="icons8-github-24.svg" class="icon" alt="Github"></a> <br>  
-         <a href="mailto:abdurrafiqmorenikeji@gmail.com"  target="_blank"><img src="icons8-gmail.svg" alt="E-mail"></a>
+         <a href="mailto:abdurrafiqmorenikeji@gmail.com"><img src="icons8-gmail.svg" alt="E-mail"></a>
   </div>
-      <div class="whatapp">
-    <a href="https://wa.me/+2349027423005" target="_blank" ><img src="icons8-whatsapp.svg" alt=""></a>
+  <div class="whatapp">
+    <a href="" target="_blank" ><img src="icons8-whatsapp.svg" alt=""></a>
+  </div>
+  
+ <div class="modes"> <img src="icons8-dark-mode-30.png"  alt="" onclick="darkmode()" class="darkmode">
+  <img src="icons8-light-mode-78.png" height="30" alt="" onclick="lightmode()" class="lightmode">
   </div>
 </body>
+
+<script>
+    let screen = document.getElementById('html')
+    function darkmode(){
+        screen.style.background = 'rgb(39, 32, 32)';
+        if ( screen.style.background == 'rgb(39, 32, 32)'){
+            screen.style.color = 'rgb(226, 213, 213)'
+        }
+    }
+    function lightmode(){
+        screen.style.background = 'white';
+   screen.style.color = ' black'
+    }
+</script>
 </html>
