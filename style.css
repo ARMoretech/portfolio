@@ -4,6 +4,7 @@ header {
     background: linear-gradient(rgb(255, 93, 93),red,rgb(255, 93, 93));
     justify-content: space-between;
     padding-right: 0;
+    color: black;
     /* position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +13,9 @@ header {
 
 header p{
     font-size: 1.2rem;
+    /* color: black; */
 }
+
 header nav ul li {
     display: inline-flex;
     justify-content: end;
@@ -44,12 +47,7 @@ header nav ul li a:hover{
     padding-right: 50px;
 
 }
-html{
-    background-origin: border-box;
-    background: linear-gradient(rgb(230, 248, 230), rgb(162, 216, 162),
-    rgb(85, 201, 85),rgb(93, 194, 93),rgb(229, 253, 229));
-    background-repeat: repeat;
-}
+
 .icon {
     width: 48px;
 }
@@ -65,8 +63,7 @@ article{
     margin-top: 0;
 }
 button{
-    background-color: rgb(255, 0, 0);
-    color: yellow;
+    
     border-radius: 25px;
 }
 .html, .css, .javascript, .python{
@@ -116,7 +113,7 @@ button{
     font-size: large;
 }
 .name{
-    font-family: Neon;
+    font-family: Varsity;
 }
 .projects{
     justify-content: center;
@@ -135,14 +132,32 @@ button{
    font-size: larger;
    transition: 0.5s;
 }
+.contact p{
+    font-size: large;
+
+    
+}
 .whatapp{
     position: fixed;
     bottom: 5px;
     right: 5px;
 }
-
+.modes{
+    position: fixed;
+    bottom: 85px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 197, 197);
+    background-size: cover;
+}
+.lightmode{
+    background: rgb(207, 197, 197);
+}
 @font-face {
-    font-family: Neon;
+    font-family: Varsity;
     src: url(varsity_2/varsity_regular.ttf);
 }
 @font-face {
