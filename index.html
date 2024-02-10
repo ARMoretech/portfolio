@@ -95,7 +95,7 @@
   </div>
   
  <div class="modes"> <img src="icons8-dark-mode-30.png"  alt="" onclick="darkmode()" class="darkmode">
-  
+  <img src="icons8-light-mode-78.png" height="30" alt="" onclick="lightmode()" class="lightmode">
   </div>
 </body>
 
@@ -103,11 +103,13 @@
     let screen = document.getElementById('html')
     function darkmode(){
         screen.style.background = 'rgb(39, 32, 32)';
-        screen.style.color = 'rgb(226, 213, 213)';
-        if ( screen.style.background == 'rgb(39, 32, 32)'){
-            screen.style.background = 'white';
-   screen.style.color = ' black'
+        screen.style.color = 'rgb(226, 213, 213)'
+  
         }
+    
+    function lightmode(){
+        screen.style.background = 'white';
+   screen.style.color = ' black'
     }
 </script>
 </html>
